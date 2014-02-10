@@ -4,15 +4,16 @@ PolarisBook2HTML
 Extract a book from Polaris SF collection to one HTML file suitable for ebook readers
 
 
-## UPUTE:  
+### UPUTE:  
 * odabrati direktorij koji sadrži Html datoteke knjige (p1.html, p2.html, ...)  
 * sadržaj svih datoteka se pojavi u tekstualnom polju aplikacije, slobodno urediti po želji  
 * spremiti kao HTML, čime se kreira jedna HTML datoteka pogodna sa ebook čitaće. Također, napravi se konverzija iz Windows-1250 u UTF8 (da bi naši dijakritički znakovi bili ispravno prikazani).
 
 
-U Bins direktoriju se nalazi i ZIP sa EXE datotekom, u slučaju da nemate Visual Studio.  Aplikacija je napravljena u Visual Studio 2013, WPF, .NET 4.5.1.
+U Bins direktoriju se nalazi i ZIP sa EXE datotekom, u slučaju da nemate Visual Studio.    
+Aplikacija je napravljena sa Visual Studio 2013, WPF, .NET 4.5.1, c#.
 
 
 ### TODO
-* Micanje A i IMG tagova (potrebno parsiranje HTMLa sa npr. HTMLAgilityPack)  
+* Micanje A i IMG tagova (potrebno parsiranje HTMLa sa npr. HTMLAgilityPack). Na Kindleu se prkazuje "missing img" slika za sada.  
 * Dodatni podaci u odredišnoj HTML datoteci - naslov, opis...  
