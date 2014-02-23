@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Forms;
@@ -60,6 +61,8 @@ namespace PolarisExtractor
             var files = Directory.GetFiles(selectedPath, "p*.html");
 
             var sb = new StringBuilder();
+
+            files = files.OrderBy(x => Convert.ToInt32(Path.GetFileName(x).Replace(".html", "").Replace("p", ""))).ToArray();
 
             foreach (var file in files)
             {
